@@ -4,21 +4,21 @@
       "name": "release",
       "version": "2.0.0.5344",
       "commit": "dd7eb77",
-      "upstream": "",
+      "upstream": "master",
       "lastUpdated": "2021-02-23T13:10:27.618Z"
     },
     {
       "name": "testing",
       "version": "2.0.0.5343",
       "commit": "ec354d4",
-      "upstream": "",
+      "upstream": "develop",
       "lastUpdated": "2021-02-23T13:11:05.666Z"
     },
     {
       "name": "nightly",
       "version": "3.0.4.1131",
       "commit": "6ca0f67",
-      "upstream": "",
+      "upstream": "phantom-develop",
       "lastUpdated": "2021-02-23T13:12:40.141Z"
     }
   ]
