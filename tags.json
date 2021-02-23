@@ -17,9 +17,9 @@
     {
       "name": "nightly",
       "version": "3.0.4.1131",
-      "commit": "6ca0f67",
+      "commit": "a9c3a71",
       "upstream": "phantom-develop",
-      "lastUpdated": "2021-02-23T13:12:40.141Z"
+      "lastUpdated": "2021-02-23T15:21:54.558Z"
     }
   ]
 }
