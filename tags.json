@@ -10,9 +10,9 @@
     {
       "name": "testing",
       "version": "2.0.0.5343",
-      "commit": "40e65e5",
+      "commit": "872bff8",
       "upstream": "develop",
-      "lastUpdated": "2021-02-28T13:18:58.810Z"
+      "lastUpdated": "2021-03-04T05:19:30.994Z"
     },
     {
       "name": "nightly",
