@@ -16,10 +16,10 @@
     },
     {
       "name": "nightly",
-      "version": "3.0.4.1141",
-      "commit": "f6526a5",
+      "version": "3.0.5.1143",
+      "commit": "476e600",
       "upstream": "phantom-develop",
-      "lastUpdated": "2021-03-07T21:55:32.577Z"
+      "lastUpdated": "2021-03-07T23:37:59.918Z"
     },
     {
       "name": "v2",
