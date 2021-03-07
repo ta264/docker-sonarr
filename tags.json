@@ -20,6 +20,13 @@
       "commit": "890bb1b",
       "upstream": "phantom-develop",
       "lastUpdated": "2021-03-07T01:19:36.803Z"
+    },
+    {
+      "name": "v2",
+      "version": "",
+      "commit": "",
+      "upstream": "v2",
+      "lastUpdated": ""
     }
   ],
   "pulls": 28237124,
