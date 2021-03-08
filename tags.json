@@ -8,17 +8,10 @@
       "lastUpdated": "2021-03-04T06:20:51.153Z"
     },
     {
-      "name": "testing",
-      "version": "2.0.0.5343",
-      "commit": "be25832",
-      "upstream": "develop",
-      "lastUpdated": "2021-03-04T06:20:14.056Z"
-    },
-    {
       "name": "nightly",
       "version": "develop-3.0.5.1146",
       "commit": "be9b82d",
-      "upstream": "phantom-develop",
+      "upstream": "develop",
       "lastUpdated": "2021-03-08T01:24:06.899Z"
     },
     {
