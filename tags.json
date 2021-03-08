@@ -2,10 +2,10 @@
   "tags": [
     {
       "name": "release",
-      "version": "2.0.0.5344",
-      "commit": "c4511ea",
+      "version": "3.0.5.1144",
+      "commit": "24d0555",
       "upstream": "main",
-      "lastUpdated": "2021-03-04T06:20:51.153Z"
+      "lastUpdated": "2021-03-08T22:08:45.024Z"
     },
     {
       "name": "nightly",
