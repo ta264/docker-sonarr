@@ -16,10 +16,10 @@
     },
     {
       "name": "v2",
-      "version": "master-2.0.0.5344",
-      "commit": "2393d92",
+      "version": "2.0.0.5344",
+      "commit": "5844b39",
       "upstream": "v2",
-      "lastUpdated": "2021-03-08T01:17:55.255Z"
+      "lastUpdated": "2021-03-08T01:28:04.642Z"
     }
   ],
   "pulls": 28248773,
