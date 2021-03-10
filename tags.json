@@ -3,9 +3,9 @@
     {
       "name": "release",
       "version": "3.0.5.1144",
-      "commit": "24d0555",
+      "commit": "65e317a",
       "upstream": "main",
-      "lastUpdated": "2021-03-08T22:08:45.024Z"
+      "lastUpdated": "2021-03-10T11:23:15.256Z"
     },
     {
       "name": "nightly",
