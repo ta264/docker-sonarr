@@ -9,10 +9,10 @@
     },
     {
       "name": "nightly",
-      "version": "3.0.6.1276",
-      "commit": "f8ac3d6",
+      "version": "3.0.6.1277",
+      "commit": "e366074",
       "upstream": "develop",
-      "lastUpdated": "2021-07-04T18:39:24.186Z"
+      "lastUpdated": "2021-07-13T17:45:34.051Z"
     },
     {
       "name": "v2",
