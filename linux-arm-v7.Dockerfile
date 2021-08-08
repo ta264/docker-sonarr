@@ -1,23 +1,14 @@
-FROM ghcr.io/hotio/base@sha256:4636163022663cae2009a5cde9ab5c9499a8503d1e2b130b0daf44b4c35002ee
+FROM ghcr.io/hotio/base@sha256:c2f5de8857f463ce41db1d27a5d9bff734bea5073a4cf7bcdc7bf44a411a4d04
 
 ARG DEBIAN_FRONTEND="noninteractive"
 
 EXPOSE 8989
 
-# https://download.mono-project.com/repo/ubuntu/dists/focal/snapshots/
-ARG MONO_VERSION=6.12.0.122
-
 # install packages
 RUN apt update && \
     apt install -y --no-install-recommends --no-install-suggests \
-        gnupg && \
-    apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF && echo "deb https://download.mono-project.com/repo/ubuntu focal/snapshots/${MONO_VERSION} main" | tee /etc/apt/sources.list.d/mono-official.list && \
-    apt update && \
-    apt install -y --no-install-recommends --no-install-suggests \
-        mono-complete=${MONO_VERSION}\* \
-        libmediainfo0v5 && \
+        libmediainfo0v5 libicu66 && \
 # clean up
-    apt purge -y gnupg && \
     apt autoremove -y && \
     apt clean && \
     rm -rf /tmp/* /var/lib/apt/lists/* /var/tmp/*
@@ -26,9 +17,9 @@ ARG VERSION
 ARG SBRANCH
 ARG PACKAGE_VERSION=${VERSION}
 RUN mkdir "${APP_DIR}/bin" && \
-    curl -fsSL "https://download.sonarr.tv/v3/${SBRANCH}/${VERSION}/Sonarr.${SBRANCH}.${VERSION}.linux.tar.gz" | tar xzf - -C "${APP_DIR}/bin" --strip-components=1 && \
+    curl -fsSL "https://sonarr.servarr.com/v1/update/widowmaker/updatefile?version=${VERSION}&os=linux&runtime=netcore&arch=arm" | tar xzf - -C "${APP_DIR}/bin" --strip-components=1 && \
     rm -rf "${APP_DIR}/bin/Sonarr.Update" && \
-    echo "PackageVersion=${PACKAGE_VERSION}\nPackageAuthor=[hotio](https://github.com/hotio)\nUpdateMethod=Docker\nBranch=${SBRANCH}" > "${APP_DIR}/package_info" && \
+    echo "PackageVersion=${PACKAGE_VERSION}\nPackageAuthor=[hotio](https://github.com/hotio)\nUpdateMethod=Docker\nBranch=widowmaker" > "${APP_DIR}/package_info" && \
     chmod -R u=rwX,go=rX "${APP_DIR}"
 
 ARG ARR_DISCORD_NOTIFIER_VERSION
